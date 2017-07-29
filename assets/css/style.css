@@ -267,3 +267,23 @@ input[type="submit"]:hover {
     color: #fff;
 }
 
+
+/****************************
+		BREAKPOINTS 
+****************************/
+
+/* Desktop ----------- */
+@media only screen and (max-width : 980px) {
+/* Styles */
+}
+
+/* Tablet ----------- */
+@media only screen and (max-width : 768px) {
+/* Styles */
+}
+
+/* Small Device ----------- */
+@media only screen and (max-width : 768px) {
+/* Styles */
+}
+
