@@ -21,10 +21,16 @@ body {
 }
 
 .container  {
-	width: 960px;
-	margin: auto;
+	max-width: 960px;
+	margin: 50px auto;
+	overflow: hidden;
+	clear: both;
 }
 
+.navbar {
+	max-width: 960px;
+	margin: auto;
+}
 
 
 h1,h2,h3,h3,h4 {
@@ -44,17 +50,12 @@ main h2 {
 }
 
 
-
-section {
-	margin: 50px 0;
-	overflow: hidden;
-}
-
 main {
 	width: 650px;
 	float: left;
 	background: #fff;
 	padding: 20px;
+	margin-right: 30px;
 
 
 }
@@ -83,7 +84,7 @@ main {
 
 }
 
-#logo a {
+#site-header a {
     color: #fff;
     text-decoration: none;
 }
@@ -109,7 +110,7 @@ nav li {
 
 }
 
-nav li a {
+#site-header nav li a {
 	text-decoration: none;
 	color: #333;
 }
@@ -138,15 +139,15 @@ nav li a:hover {
 
 
 /****************************
-		SIDEBAR PAGE 
+		SIDEBAR
 ****************************/
 
 aside {
 	width: 270px;
 	float: left;
 	background: #fff;
-	padding: 20px;
-	margin: 0 20px;
+	padding: 20px 0 10px 10px;
+
 }
 
 aside ul {
@@ -274,16 +275,130 @@ input[type="submit"]:hover {
 
 /* Desktop ----------- */
 @media only screen and (max-width : 980px) {
-/* Styles */
-}
+
+	main {
+    width: 420px;
+	}
+
+	.container {
+		max-width: 725px;
+		margin: 20px auto;
+	}
+
+	#mugshot {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.navbar {
+		max-width: 725px;
+		margin: 0 auto;
+	}
+
+	.portfolio-image {
+    	width: 345px;
+    	height: 200px;
+
+	}
+
+	.portfolio-image img {
+    	width: 100%;
+	}
+
+	.portfolio-image h2 { 
+		top: 140px;
+	}	
+
 
 /* Tablet ----------- */
 @media only screen and (max-width : 768px) {
-/* Styles */
+
+	main, aside {
+		width:100%;
+	    max-width: 725px;
+	}
+
+	aside {
+		margin: 20px 0;
+	}
+
+	#mugshot {
+		width: 335px;
+		margin-bottom: 20px;
+	}
+
+	.portfolio-image {
+    	width: 300px;
+    	height: 200px;
+
+	}
+
+	.portfolio-image img {
+    	width: 100%;
+	}
+
+	.portfolio-image h2 { 
+		top: 140px;
+	}	
+
+
 }
 
 /* Small Device ----------- */
-@media only screen and (max-width : 768px) {
-/* Styles */
-}
+@media only screen and (max-width : 640px) {
+
+	#site-header {
+		width: 640px;
+		max-width: 100%;
+		position: static;
+	}
+
+	.navbar {
+		clear: both;
+	}
+
+	.container {
+		width: 100%;
+		max-width: 600px;
+	}
+
+	.container main {
+		max-width: 600px;
+		margin-top: 20px;
+	}
+
+	.container #mugshot {
+	max-width: 100%;
+	width: 600px;
+	margin-bottom: 20px;
+	}
+
+
+	#site-header h1 {
+    float: none;
+    display: block;
+    text-align: center;
+	}
+
+	nav ul {
+		float: left;
+    	width: 100%;
+    	text-align: center;
+    	background: #fff;
+    	padding: -10px 0;
+	}
+
+	.portfolio-image {
+    	width: 530px;
+    	height: auto;
+
+	}
+
+	.portfolio-image img {
+    	width: 100%;
+	}
+
+	.portfolio-image h2 { 
+		top: 300px;
+	}
 
