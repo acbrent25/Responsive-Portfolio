@@ -21,16 +21,17 @@ body {
 }
 
 .container  {
+	width: 100%;
 	max-width: 960px;
-	margin: 50px auto;
 	overflow: hidden;
 	clear: both;
+	margin: 0 auto;
 }
 
-.navbar {
-	max-width: 960px;
-	margin: auto;
+.content {
+	margin-top: 20px;
 }
+
 
 
 h1,h2,h3,h3,h4 {
@@ -210,7 +211,7 @@ footer {
 .portfolio-image h2 {
 	z-index: 1;
 	position: relative;
-	top: 140px;
+	top: 5.5em;
 	text-align: center;
 	background: rgba(215, 44, 44, 0.7);
 	color: #fff;
@@ -226,7 +227,13 @@ footer {
 }
 
 .portfolio-image img {
-    margin-top: -50px;
+	margin-top: -50px;
+	max-width: 100%;
+
+}
+
+.portfolio-row {
+	clear: both;
 }
 
 
@@ -276,13 +283,12 @@ input[type="submit"]:hover {
 /* Desktop ----------- */
 @media only screen and (max-width : 980px) {
 
-	main {
-    width: 420px;
-	}
+	 main {
+    max-width: 420px;
+	} 
 
 	.container {
 		max-width: 725px;
-		margin: 20px auto;
 	}
 
 	#mugshot {
@@ -290,24 +296,18 @@ input[type="submit"]:hover {
 		margin-bottom: 20px;
 	}
 
-	.navbar {
-		max-width: 725px;
-		margin: 0 auto;
-	}
 
 	.portfolio-image {
-    	width: 345px;
-    	height: 200px;
+		width: 100%;
+    	max-width: 345px;
+		height: auto;
 
 	}
 
-	.portfolio-image img {
-    	width: 100%;
-	}
 
-	.portfolio-image h2 { 
-		top: 140px;
-	}	
+	 .portfolio-image h2 { 
+		top: 7.2em;
+	}	 
 
 
 /* Tablet ----------- */
@@ -315,7 +315,7 @@ input[type="submit"]:hover {
 
 	main, aside {
 		width:100%;
-	    max-width: 725px;
+	    max-width: 758px;
 	}
 
 	aside {
@@ -323,23 +323,19 @@ input[type="submit"]:hover {
 	}
 
 	#mugshot {
-		width: 335px;
+		max-width: 335px;
 		margin-bottom: 20px;
 	}
 
 	.portfolio-image {
-    	width: 300px;
-    	height: 200px;
-
+		width: 45%;
+    	max-width: 315px;
 	}
 
-	.portfolio-image img {
-    	width: 100%;
-	}
 
-	.portfolio-image h2 { 
-		top: 140px;
-	}	
+	 .portfolio-image h2 { 
+		top: 6em;
+	}	 
 
 
 }
@@ -348,9 +344,10 @@ input[type="submit"]:hover {
 @media only screen and (max-width : 640px) {
 
 	#site-header {
-		width: 640px;
-		max-width: 100%;
+		width: 100%;
+		max-width: 620px;
 		position: static;
+		margin: 0 auto;
 	}
 
 	.navbar {
@@ -359,11 +356,11 @@ input[type="submit"]:hover {
 
 	.container {
 		width: 100%;
-		max-width: 600px;
+		max-width: 620px;
 	}
 
 	.container main {
-		max-width: 600px;
+		max-width: 620px;
 		margin-top: 20px;
 	}
 
@@ -388,17 +385,12 @@ input[type="submit"]:hover {
     	padding: -10px 0;
 	}
 
+
 	.portfolio-image {
-    	width: 530px;
-    	height: auto;
-
+		width: 100%;
+		max-width: 500px;
 	}
 
-	.portfolio-image img {
-    	width: 100%;
-	}
-
-	.portfolio-image h2 { 
-		top: 300px;
-	}
-
+#portfolio-content h2 {
+    top: 10em;
+}
